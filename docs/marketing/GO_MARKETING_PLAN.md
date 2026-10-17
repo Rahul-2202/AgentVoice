@@ -94,7 +94,7 @@ For friend groups who plan trips in chat and lose momentum, Go is the AI member 
 2. **"Nothing books until you say yes."** Trust message. Matches the payer's "yes book" and passkey gate.
 3. **"Nobody's budget is shown to the group."** Privacy message. Go plans to the lowest private range.
 4. **"One receipt. Nobody chases money."** Budget message.
-5. **"Most group trips never leave the chat. Go gets them out."** Problem message. Do not use "76%" as Go's own claim. See section 4.6.
+5. **"Most group trips never leave the chat. Go gets them out."** Problem message. Use only as an unsourced voiceover claim, and never in a hook. Do not use "76%" as Go's own claim. See section 4.6.
 
 ### 4.6 The 76% statistic (checked)
 
@@ -163,13 +163,18 @@ Sequenced to V1 order: design first, then marketing content.
 | # | Asset | Owner | Depends on | Notes |
 |---|---|---|---|---|
 | 1 | Brand and message brief (this doc, approved) | marketing-lead | CEO review | |
-| 2 | Hero script (60 s) "your group chat, now with a planner" | marketing-script | Approved screens: trip room, decision card, ticket card | Uses messages 1 and 2 |
-| 3 | Privacy script (30 s) "nobody's budget is shown" | marketing-script | Budget and invite screens | Message 3 |
-| 4 | Short cut-downs (15 s x 3), one per hook in 4.3 | marketing-script | Hero script | For social |
+| 2 | Hero script (60 s) "your group chat, now with a planner" | marketing-script | Approved screens: trip room, decision card, ticket card, passkey confirmation | Uses messages 1 and 2. The passkey screen is needed for the "nothing books until you say yes" beat. |
+| 3 | Privacy script (30 s) "nobody's budget is shown" | marketing-script | Budget, invite and private-budget (hidden from group) screens | Message 3. Lead with "Private budget"; the abstract "money drama" line needs a concrete scene. |
+| 4 | Three 15 s cut-downs from "Stalled plan", "Money drama" and "Private budget" (not all five hooks) | marketing-script | Hero script | For social. "Chat-native" and "Demo honesty" go on end cards, not as openers. |
 | 5 | Promo video, 60 s hero cut | marketing-video | Design sign-off, scripts approved | Use real screens only, mark demo status |
 | 6 | Vertical social cuts (9:16) | marketing-video | Item 5 | |
 | 7 | Landing page copy and hero | marketing-lead with design-lead | Scripts and screens | Needs CEO approval before publish |
 | 8 | Demo walkthrough (screen recording) | marketing-video | Booking pipeline on fake ixigo working | Must show DEMO labels |
+
+**Script inputs and turnaround** (from marketing-script, T-87; estimate, untested):
+- Needs signed-off screens only, with full-resolution UI text, the DEMO ticket treatment and the DESIGN.md tone notes.
+- Hero about 1 working day, privacy about 1 day, cut-downs about half a day after the hero is locked. About 3 working days including one revision, assuming no new claims or screen changes.
+- Hinglish drafts need a native reviewer before anything ships.
 
 **Rules for every asset:**
 - Show screens as designed, and show the DEMO label on every ticket.
