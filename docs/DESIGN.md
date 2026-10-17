@@ -46,7 +46,7 @@ Use these as the primary references. Design-lead should study them before produc
 |---|---|---|
 | Trip room chat (Go) | Warm, casual, lowercase, emoji allowed | "ok, 3 votes in. booking tonight?" |
 | Product copy | Plainspoken, short, reassuring | "Nothing books until you say yes." |
-| Privacy and money | Calm, exact, no jargon | "Face ID confirms this payment. Nothing is charged until you do." |
+| Privacy and money | Calm, exact, no jargon | "Confirm with your passkey on the vault page. Nothing is charged until you do." |
 | Errors | Direct, one next step | "That price changed. Check again?" |
 
 Go's two personas: **Go** (the doer, runs bookings and plans) and **Nami** (the keeper, remembers member facts). Keep them distinct in copy and in iconography.
@@ -116,13 +116,13 @@ Font family not confirmed. Use a single geometric or grotesque sans for UI and h
 - Private budget ranges never appear here.
 
 ### 7.5 Vault
-- Locked state shows a Face ID prompt. Contents hidden until success.
+- Locked state shows a passkey prompt (Face ID or fingerprint) on the vault page. Contents hidden until success.
 - Cards and logins shown only to the owner.
 
 ### 7.6 Buttons
 - Primary: "Get started", "Yes, book", "Vote". Filled `color.brand.gold`.
 - Secondary: "Book a call", "Not now". Outline.
-- Destructive or money-moving actions always require Face ID confirmation.
+- Money-moving actions always require the payer's passkey confirmation on the vault page.
 
 ### 7.7 Inline controls
 - "Approve" / "Hold" on decisions; "Handle it" / "Not now" on Go's suggestions.
@@ -137,7 +137,7 @@ Trip Home, Itinerary, Bookings, Budget, trip room, Vault, invite landing, decisi
 Each screen needs:
 - Empty state
 - Loading state (live price fetch)
-- Error state (booking failed, price changed, Face ID failed)
+- Error state (booking failed, price changed, passkey failed)
 - Success state
 
 ## 9. Motion
