@@ -1,0 +1,13 @@
+{
+  "name": "agentvoice-go",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Go: live search and booking connectors (V1 uses fake ixigo and simulated payment)",
+  "scripts": {
+    "test": "node --test test/*.test.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
