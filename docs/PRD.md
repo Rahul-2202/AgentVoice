@@ -133,7 +133,7 @@ Acceptance: the receipt totals match the sum of recorded expenses. Each debt sho
 
 ## 8. V1 screens
 
-Trip Home, Itinerary, Bookings, Budget, plus the trip room, Vault (Face ID gated), invite landing and decision cards. The full set is 38 screens (`/screens` on the landing site). **[confirm against spec]** which of the 38 are V1.
+Trip Home, Itinerary, Bookings, Budget, plus the trip room, Vault (Face ID gated), invite landing and decision cards. The screen source is the Go frontend: 72 artboards in `go-frontend/plans/screens/` (groups A to M). Vestrago.vercel.app is a mock-up and is not the screen source (CEO, T-49). **[confirm against spec]** which of the 72 are V1 (proposed 65, see T-12).
 
 ## 9. Stretch (not V1)
 

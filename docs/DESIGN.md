@@ -136,7 +136,7 @@ Font family not confirmed. Use a single geometric or grotesque sans for UI and h
 
 ## 8. Screens
 
-Trip Home, Itinerary, Bookings, Budget, trip room, Vault, invite landing, decision and booking flows. Full list of 38 screens: `/screens` on vestrago.vercel.app. **[confirm against spec]** which are V1.
+Trip Home, Itinerary, Bookings, Budget, trip room, Vault, invite landing, decision and booking flows. Screen source: the 72 artboards in go-frontend `plans/screens/` (groups A to M). Vestrago.vercel.app is a mock-up, not the screen source (CEO, T-49). **[confirm against spec]** which are V1.
 
 Each screen needs:
 - Empty state
