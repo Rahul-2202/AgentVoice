@@ -70,7 +70,7 @@ Acceptance: a decision closes only when Go records the close. Votes after close 
 3. The payer taps Approve in the room, opens the vault's pay page, and confirms with their own passkey (Face ID or fingerprint). The confirmation happens on the vault page, never in the app.
 4. Go places the booking through the booking connector and posts a ticket card with status.
 
-Acceptance: no booking proceeds without a closed decision, a "yes book" from the payer, and a successful Face ID confirmation.
+Acceptance: no booking proceeds without a closed decision, a "yes book" from the payer, and a successful passkey confirmation on the vault page.
 
 ### 6.5 Settle
 1. Expenses are recorded against the single receipt.
@@ -109,7 +109,7 @@ Acceptance: the receipt totals match the sum of recorded expenses. Each debt sho
 
 ### 7.5 Vault
 - Stores each member's cards and logins.
-- Locked by default. Contents are visible only after Face ID.
+- Locked by default. Contents are visible only after the owner's passkey succeeds on the vault page (Face ID or fingerprint, per device). Native Face ID is out of V1 scope.
 - Only the owner's vault is decryptable by the owner.
 
 ### 7.6 Memory (Nami)
@@ -148,7 +148,7 @@ Telegram bridge, WhatsApp nudges, voice notes, flight-delay autopilot, single-us
 - [ ] One real booking completes through ixigo.
 - [ ] One real phone call completes with the AI disclosure.
 - [ ] Budget receipt totals match recorded expenses.
-- [ ] Vault contents are hidden until Face ID succeeds.
+- [ ] Vault contents are hidden until the owner's passkey succeeds on the vault page.
 - [ ] Private budgets are never shown to other members.
 - [ ] Memory facts never cross group boundaries.
 - [ ] Alerts fire only for votes, mentions and money.
@@ -184,7 +184,7 @@ Dev-lead creates Linear tickets from sections 6 to 10. Suggested epics:
 5. Live search and booking connectors (ixigo, mock)
 6. Phone-call flow with AI disclosure
 7. Budget, expenses and settle-up
-8. Vault with Face ID
+8. Vault with passkey on the vault page (web)
 9. Memory (Nami) and group isolation
 10. Alerts and notifications
 11. Itinerary, Bookings and Trip Home screens
