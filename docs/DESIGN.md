@@ -51,27 +51,31 @@ Use these as the primary references. Design-lead should study them before produc
 
 Go's two personas: **Go** (the doer, runs bookings and plans) and **Nami** (the keeper, remembers member facts). Keep them distinct in copy and in iconography.
 
-## 4. Colour (provisional)
+## 4. Colour
 
-Vestra imagery suggests warm gold, wheat and dusk tones, with sky blue in footers. Values below are placeholders until the brand palette is confirmed.
+Source: the Go token set in go-frontend `plans/PLAN.md` §3, chosen by design-lead under the CEO's delegation (AGE-17). Terracotta is the single brand accent. The parent vestra.ai palette is not exposed in its CSS, so it is not used here; this set stays provisional until the parent brand values are confirmed.
 
-| Token | Use | Provisional value |
+| Token | Use | Value |
 |---|---|---|
-| `color.brand.gold` | Primary accent, primary buttons | `#C9A227` |
-| `color.brand.wheat` | Secondary surfaces, cards | `#F3E9D2` |
-| `color.brand.dusk` | Headlines, dark surfaces | `#2B2433` |
-| `color.brand.sky` | Info, links, footer | `#8EC5E8` |
-| `color.neutral.900` | Body text | `#1C1C1E` |
-| `color.neutral.500` | Secondary text, timestamps | `#6E6E73` |
-| `color.neutral.100` | Page background | `#FFFFFF` |
-| `color.status.success` | Booked, done | `#2E7D4F` |
-| `color.status.warning` | Needs you, price changed | `#B26A00` |
-| `color.status.danger` | Failed booking, error | `#B3261E` |
+| `color.go` | Brand accent: "Go" label, Skip/Not now links, unread badge, tint-button text | `#A44F3A` |
+| `color.go-soft` | Go bubble, tint buttons | `#F6EAE6` |
+| `color.go-note` | Go note and privacy note background | `#FFF6F2` |
+| `color.ink` | Primary text, navy surfaces | `#0B1B3F` |
+| `color.ink-hover` | Link hover (fine pointer only) | `#22365F` |
+| `color.muted` | Secondary text, placeholders | `#4A5878` |
+| `color.faint` | Tertiary text, chevrons | `#A5ACB8` |
+| `color.black` | Primary button fill, my bubble | `#000000` |
+| `color.canvas` | Page and sheet background | `#F6F7F9` |
+| `color.surface` | Cards, header | `#FFFFFF` |
+| `color.surface-2` | Grey chips, grey input, option tiles | `#F4F5F7` |
+| `color.line` | Hairline dividers, card borders | `#ECEFF3` |
+| `color.line-2` | Chip borders, sheet grabber, switch off | `#DDE1E6` |
 
 Rules:
 - Contrast of text on any background must meet WCAG AA (4.5:1 body, 3:1 large).
-- Status colours are never the only signal; pair with an icon and label.
-- Dark mode: define once the palette is confirmed.
+- Status colours are never the only signal; pair with an icon and label. The status tokens (success, warning, danger) are in PLAN §3; use those values, not the placeholders previously here.
+- Motion and imagery only where they carry meaning (CEO direction, AGE-17).
+- Dark mode is out of scope for V1 (PLAN §1: no `next-themes`).
 
 ## 5. Typography (provisional)
 
