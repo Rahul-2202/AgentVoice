@@ -67,7 +67,7 @@ Acceptance: a decision closes only when Go records the close. Votes after close 
 ### 6.4 Book
 1. Go books only after a closed decision.
 2. The payer types "yes book".
-3. The payer confirms with Face ID.
+3. The payer taps Approve in the room, opens the vault's pay page, and confirms with their own passkey (Face ID or fingerprint). The confirmation happens on the vault page, never in the app.
 4. Go places the booking through the booking connector and posts a ticket card with status.
 
 Acceptance: no booking proceeds without a closed decision, a "yes book" from the payer, and a successful Face ID confirmation.
@@ -120,9 +120,10 @@ Acceptance: the receipt totals match the sum of recorded expenses. Each debt sho
 - Alerts only for votes, mentions and money. No other push notifications in V1.
 
 ### 7.8 Live search and booking
-- Flights, trains, buses and hotels via the ixigo MCP, with live prices and checked-at timestamps.
-- Phone calls to businesses (for example a restaurant table or a villa's late checkout). Each call opens with a disclosure that Go is an AI.
-- A browser is the backup path when the MCP has no result.
+- Flights, buses and the group's stay are searched and booked on ixigo.com in the trip's own browser (`TRAVEL_MODE=ixigo_web`). Go books up to ixigo's pay button and never opens ixigo's payment page. Trains are parked (IRCTC login per traveller).
+- Phone calls to businesses via Twilio with a realtime voice model. Off by default (`CALLS_MODE=off`); allowlist only. Go says who it will call and why, and waits 30 seconds for a stop. Each call opens with a disclosure that Go is an AI.
+- Test and demo runs use a fake ixigo; the demo payment is simulated and its tickets say DEMO. The partner ixigo MCP is VPN-only and unused.
+- Source: go-brain/docs/architecture.md, go-backend/docs/API.md.
 
 ### 7.9 Hard booking rules
 - No spend above the group's cap.
@@ -161,9 +162,9 @@ Telegram bridge, WhatsApp nudges, voice notes, flight-delay autopilot, single-us
 
 ## 12. Dependencies and risks
 
-- ixigo MCP availability and pricing. Mitigation: browser backup, mock services for demos.
-- Face ID support on the web. **[confirm with dev-lead]**
-- Phone-call provider. **[confirm with dev-lead]**
+- ixigo.com page changes break the browser flow. Mitigation: recipe files per page, fake ixigo for tests and demos.
+- Passkey (Face ID or fingerprint) on the vault page. Resolved: per go-brain/docs/architecture.md.
+- Phone-call provider is Twilio. Resolved: off by default, allowlist only.
 - Hackweek timeline is short; scope creep is the main risk. Stretch items stay out of V1.
 
 ## 13. Open questions
