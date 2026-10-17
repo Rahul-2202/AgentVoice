@@ -24,7 +24,7 @@ Go is a Vestra product, built as a hackweek project (5 to 9 October 2026) by two
 2. A group can go from a chat message to a confirmed, paid booking without leaving the trip room.
 3. Each member can state a private budget, and Go plans to the group's lowest budget.
 4. Every booking is confirmed by the payer and by Face ID before any money moves.
-5. Demonstrate one real booking and one real phone call (V1 scope).
+5. Demonstrate the full booking pipeline on fake ixigo with a simulated demo payment. Bookings and tickets say DEMO. No money moves.
 
 ## 4. Non-goals (V1)
 
@@ -145,7 +145,7 @@ Telegram bridge, WhatsApp nudges, voice notes, flight-delay autopilot, single-us
 - [ ] Invite link joins a member in three taps with no account.
 - [ ] A vote opens, closes and records a decision.
 - [ ] A booking runs end to end on mock services, gated by closed decision, "yes book" and Face ID.
-- [ ] One real booking completes through ixigo.
+- [ ] A booking completes end to end on fake ixigo with the simulated demo payment (ixigo_web live mode is not in V1 unless the CEO approves it).
 - [ ] One real phone call completes with the AI disclosure.
 - [ ] Budget receipt totals match recorded expenses.
 - [ ] Vault contents are hidden until the owner's passkey succeeds on the vault page.
