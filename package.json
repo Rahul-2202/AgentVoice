@@ -1,0 +1,13 @@
+{
+  "name": "go-trip",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Go: AI member of a group trip chat (V1 domain core)",
+  "scripts": {
+    "test": "node --test --test-reporter=spec src/**/*.test.ts"
+  },
+  "engines": {
+    "node": ">=24"
+  }
+}
